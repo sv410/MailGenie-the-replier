@@ -1,0 +1,346 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(1 0 0); /* white */
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+  /* Brand and surface tokens (OKLCH for perceptual consistency) */
+  --mg-cream: oklch(0.97 0.03 95); /* soft warm cream */
+  --mg-mint: oklch(0.95 0.06 150); /* very light green (mint) */
+  --mg-green: oklch(0.7 0.12 150); /* brand green for CTAs */
+  --mg-ink: oklch(0.18 0 0); /* near-black text */
+  --mg-purple: oklch(0.6 0.25 300); /* rich purple accent from provided gradient */
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+  /* Optional darker mode still supported but deprioritized for this landing */
+  --mg-cream: oklch(0.97 0.03 95); /* soft warm cream */
+  --mg-mint: oklch(0.95 0.06 150); /* very light green (mint) */
+  --mg-green: oklch(0.7 0.12 150); /* brand green for CTAs */
+  --mg-ink: oklch(0.18 0 0); /* near-black text */
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-inter); /* keep mono fallback simple here */
+  --font-heading: var(--font-sora);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .hero-surface {
+    /* Layer 1: soft grid lines */
+    background-image: linear-gradient(to right, color-mix(in oklab, var(--mg-ink) 8%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in oklab, var(--mg-ink) 8%, transparent) 1px, transparent 1px),
+      radial-gradient(1200px 600px at 20% -10%, color-mix(in oklab, var(--mg-mint) 60%, white) 0%, transparent 40%),
+      radial-gradient(1200px 600px at 85% 0%, color-mix(in oklab, var(--mg-cream) 80%, white) 0%, transparent 45%),
+      linear-gradient(180deg, oklch(1 0 0), var(--mg-cream));
+    background-size: 24px 24px, 24px 24px, auto, auto, auto;
+    background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
+    border-radius: var(--radius-xl);
+  }
+
+  /* Replace @apply that mixed rounded-[calc(...)] and border with pure CSS to avoid Tailwind concatenation error */
+  .soft-card {
+    border-radius: calc(var(--radius) + 8px);
+    border: 1px solid var(--border);
+    background-color: var(--card);
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.12);
+  }
+
+  .pill {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-medium bg-secondary text-secondary-foreground border;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04) inset, 0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  /* remove bracketed scale utilities from @apply (moved to plain CSS pseudo-classes) */
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-primary text-primary-foreground px-6 py-3 font-semibold shadow transition-all duration-200 hover:shadow-lg;
+  }
+  .btn-primary:hover {
+    transform: scale(1.02);
+  } /* add hover transform */
+  .btn-primary:active {
+    transform: scale(0.98);
+  } /* add active transform */
+
+  /* same fix for secondary button */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full bg-secondary text-secondary-foreground px-6 py-3 font-semibold border transition-all duration-200 hover:shadow-md;
+  }
+  .btn-secondary:hover {
+    transform: scale(1.01);
+  } /* add hover transform */
+  .btn-secondary:active {
+    transform: scale(0.99);
+  } /* add active transform */
+
+  /* reusable aurora section using your purple→green gradient image */
+  .section-aurora {
+    background-image: linear-gradient(180deg, color-mix(in oklab, var(--mg-cream) 85%, white) 0%, transparent 70%),
+      url("/images/bg-whatsapp.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--radius-xl);
+    box-shadow: 0 20px 60px -24px rgba(0, 0, 0, 0.18);
+  }
+
+  /* subtle grid overlay container inside aurora */
+  .with-grid {
+    background-image: linear-gradient(to right, color-mix(in oklab, var(--mg-ink) 8%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in oklab, var(--mg-ink) 8%, transparent) 1px, transparent 1px);
+    background-size: 24px 24px, 24px 24px;
+    background-position: 0 0, 0 0;
+  }
+
+  /* card styling on aurora sections (soft, readable) */
+  .card-on-aurora {
+    border-radius: calc(var(--radius) + 8px);
+    border: 1px solid var(--border);
+    background-color: color-mix(in oklab, white 78%, transparent);
+    backdrop-filter: saturate(140%) blur(6px);
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.12);
+  }
+
+  /* heading font helper */
+  .heading {
+    font-family: var(--font-heading), var(--font-sans), system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+      Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    letter-spacing: -0.01em;
+  }
+
+  /* add Try page dedicated background using WhatsApp gradient, a bit stronger */
+  .try-aurora {
+    background-image: linear-gradient(180deg, color-mix(in oklab, var(--mg-cream) 70%, transparent) 0%, transparent 60%),
+      url("/images/bg-whatsapp.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* input/select styling for modern classic tinted look on Try page */
+  .play-input {
+    background-color: color-mix(in oklab, var(--mg-cream) 85%, transparent);
+    border: 1px solid color-mix(in oklab, var(--mg-green) 40%, transparent);
+    border-radius: calc(var(--radius) + 6px);
+  }
+  .play-select {
+    background-color: color-mix(in oklab, var(--mg-cream) 85%, transparent);
+    border: 1px solid color-mix(in oklab, var(--mg-green) 40%, transparent);
+    border-radius: calc(var(--radius) + 6px);
+  }
+
+  /* chips for streams */
+  .play-chip {
+    @apply inline-flex items-center h-8 px-3 rounded-full border transition;
+    background-color: color-mix(in oklab, var(--mg-cream) 80%, transparent);
+  }
+  .play-chip-active {
+    @apply border;
+    background-color: color-mix(in oklab, var(--mg-mint) 70%, transparent);
+  }
+
+  /* template pill buttons */
+  .play-template {
+    @apply inline-flex items-center rounded-full px-3 py-1.5 text-sm transition hover:shadow;
+    background-color: color-mix(in oklab, white 78%, transparent);
+    border: 1px solid var(--border);
+  }
+
+  /* playground surface */
+  .playground-card {
+    border-radius: calc(var(--radius) + 10px);
+    border: 1px solid var(--border);
+    background-color: color-mix(in oklab, white 82%, transparent);
+    backdrop-filter: saturate(140%) blur(6px);
+    box-shadow: 0 18px 50px -20px rgba(0, 0, 0, 0.18);
+  }
+
+  /* Navbar gradient background */
+  .navbar-gradient {
+    background: linear-gradient(135deg, 
+      #8b5cf6 0%,     /* Purple */
+      #a855f7 25%,    /* Lighter purple */
+      #06b6d4 50%,    /* Cyan */
+      #10b981 75%,    /* Green */
+      #22c55e 100%    /* Lighter green */
+    );
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Navbar button styling */
+  .btn-navbar {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold shadow transition-all duration-200 hover:shadow-lg;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #1f2937;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+  }
+  .btn-navbar:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+  .btn-navbar:active {
+    transform: scale(0.98);
+  }
+
+  /* Gradient hover effect for content boxes */
+  .gradient-hover {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gradient-hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+      rgba(139, 92, 246, 0.15) 0%,     /* Purple with opacity */
+      rgba(168, 85, 247, 0.15) 25%,    /* Lighter purple */
+      rgba(6, 182, 212, 0.15) 50%,     /* Cyan */
+      rgba(16, 185, 129, 0.15) 75%,    /* Green */
+      rgba(34, 197, 94, 0.15) 100%     /* Lighter green */
+    );
+    background-size: 200% 200%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .gradient-hover:hover::before {
+    opacity: 1;
+    animation: gradient-shift-hover 2s ease infinite;
+  }
+  
+  .gradient-hover > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  @keyframes gradient-shift-hover {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+}

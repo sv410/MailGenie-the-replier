@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "category": "Job Offer",
+    "question": "Email to HR for accepting the job offer",
+    "prompt": "Write a polite and professional email to HR accepting a job offer and confirming the joining date.",
+    "answer": "Subject: Acceptance of Job Offer\n\nDear [HR Name],\n\nI am writing to formally accept the job offer for the position of [Job Title] at [Company Name]. I am excited to join the team and contribute to the organization’s success.\n\nAs discussed, I confirm my joining date as [Joining Date]. Thank you for this opportunity.\n\nWarm regards,\n[Your Full Name]\n[Your Contact Information]"
+  },
+  {
+    "id": 2,
+    "category": "Job Offer",
+    "question": "Thank HR for offering me a role",
+    "prompt": "Write a thank-you email to HR expressing gratitude for the job offer.",
+    "answer": "Subject: Thank You for the Offer\n\nDear [HR Name],\n\nThank you so much for offering me the position of [Job Title] at [Company Name]. I truly appreciate the opportunity and am excited about the possibility of contributing to the team.\n\nI’m grateful for your support throughout the process.\n\nWarm regards,\n[Your Full Name]"
+  },
+  {
+    "id": 3,
+    "category": "Job Follow-up",
+    "question": "Follow up on my interview result",
+    "prompt": "Write a polite follow-up email to HR asking for an update on my interview status.",
+    "answer": "Subject: Follow-Up on Interview Status\n\nDear [HR Name],\n\nI hope this message finds you well. I wanted to follow up regarding my interview for the [Job Title] position on [Date]. I remain very interested in the role and look forward to hearing any updates regarding the next steps.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Full Name]"
+  },
+  {
+    "id": 4,
+    "category": "Job Application",
+    "question": "Email to apply for a job position",
+    "prompt": "Write a formal email to apply for a job role.",
+    "answer": "Subject: Application for [Job Title]\n\nDear [Hiring Manager Name],\n\nI am writing to express my interest in the [Job Title] position at [Company Name]. With my background in [Relevant Skill/Experience], I believe I can contribute meaningfully to your team.\n\nI have attached my resume for your review. Thank you for considering my application.\n\nWarm regards,\n[Your Full Name]\n[Contact Info]"
+  },
+  {
+    "id": 5,
+    "category": "Job Resignation",
+    "question": "Professional resignation email",
+    "prompt": "Write a professional resignation email to HR.",
+    "answer": "Subject: Resignation from [Job Title] Position\n\nDear [Manager/HR Name],\n\nI hope this email finds you well. I am writing to formally resign from my position as [Job Title] at [Company Name], effective [Last Working Date].\n\nI truly value the opportunities and support I’ve received during my time here. I will do my best to ensure a smooth transition.\n\nWarm regards,\n[Your Full Name]"
+  },
+  {
+    "id": 6,
+    "category": "Job",
+    "question": "Request salary structure after offer",
+    "prompt": "Write an email to HR requesting a detailed salary structure after receiving an offer.",
+    "answer": "Subject: Request for Salary Structure\n\nDear [HR Name],\n\nThank you for extending the offer for the [Job Title] role. Could you please share the detailed salary structure to help me review the offer thoroughly?\n\nI appreciate your time and support.\n\nWarm regards,\n[Your Full Name]"
+  },
+  {
+    "id": 7,
+    "category": "Job",
+    "question": "Negotiate job offer",
+    "prompt": "Write a polite email to HR negotiating the offer.",
+    "answer": "Subject: Regarding Offer Discussion\n\nDear [HR Name],\n\nThank you for the offer to join [Company Name] as [Job Title]. I am genuinely excited about the opportunity. I wanted to kindly discuss the compensation structure to better align with my experience and industry standards.\n\nLooking forward to your understanding.\n\nBest regards,\n[Your Full Name]"
+  },
+  {
+    "id": 8,
+    "category": "Academic",
+    "question": "Email professor to request assignment extension",
+    "prompt": "Write a polite and respectful email to a professor requesting an extension for submitting an assignment.",
+    "answer": "Subject: Request for Assignment Extension\n\nDear Professor [Last Name],\n\nI hope you are doing well. I’m writing to request a short extension for submitting the [Assignment Name] originally due on [Due Date]. Due to [brief reason], I would greatly appreciate a few extra days to complete it thoroughly.\n\nThank you for considering my request.\n\nBest regards,\n[Your Name]\n[Student ID]"
+  },
+  {
+    "id": 9,
+    "category": "Academic",
+    "question": "Request recommendation letter",
+    "prompt": "Write a formal email to a professor requesting a letter of recommendation for a program.",
+    "answer": "Subject: Request for Letter of Recommendation\n\nDear Professor [Last Name],\n\nI hope you’re doing well. I’m reaching out to ask if you would be willing to write a letter of recommendation for me as I apply to [Program/Opportunity Name]. Your guidance during [Course/Project] had a significant impact on my academic journey.\n\nThe deadline for submission is [Date], and I would be happy to provide any supporting materials.\n\nThank you for considering my request.\n\nWarm regards,\n[Your Name]"
+  },
+  {
+    "id": 10,
+    "category": "Academic",
+    "question": "Thank professor after guidance",
+    "prompt": "Write a thank-you email to a professor for their guidance.",
+    "answer": "Subject: Thank You for Your Guidance\n\nDear Professor [Last Name],\n\nI wanted to express my sincere gratitude for your support and guidance during [Course/Project]. Your insights were incredibly helpful, and I learned a great deal.\n\nThank you again for your time and encouragement.\n\nWarm regards,\n[Your Name]"
+  },
+  {
+    "id": 11,
+    "category": "Academic",
+    "question": "Email to request re-evaluation of exam",
+    "prompt": "Write a polite email to a professor requesting re-evaluation of an exam or paper.",
+    "answer": "Subject: Request for Re-evaluation\n\nDear Professor [Last Name],\n\nI hope you're doing well. I’m writing to kindly request a re-evaluation of my [Exam/Assignment] for [Course Name]. I believe there may have been a minor error in grading.\n\nI appreciate your time and consideration.\n\nBest regards,\n[Your Name]"
+  },
+  {
+    "id": 12,
+    "category": "Academic",
+    "question": "Request internship recommendation",
+    "prompt": "Write an email to a professor requesting a recommendation for an internship.",
+    "answer": "Subject: Internship Recommendation Request\n\nDear Professor [Last Name],\n\nI hope you’re doing well. I am applying for [Internship Program Name] and would be honored if you could provide a recommendation on my behalf.\n\nYour guidance during [Course/Project] has been invaluable, and your support would mean a lot.\n\nWarm regards,\n[Your Name]"
+  },
+  {
+    "id": 13,
+    "category": "Business",
+    "question": "Follow up on a proposal",
+    "prompt": "Write a polite email to a client following up on a business proposal.",
+    "answer": "Subject: Follow-Up on Proposal Submission\n\nDear [Client Name],\n\nI hope this message finds you well. I wanted to follow up regarding the proposal I sent on [Date] for [Project/Service Name]. I’d be happy to clarify any points or provide further information if needed.\n\nLooking forward to hearing your thoughts.\n\nWarm regards,\n[Your Full Name]\n[Company Name]"
+  },
+  {
+    "id": 14,
+    "category": "Business",
+    "question": "Reschedule a meeting",
+    "prompt": "Write an email to reschedule a client meeting professionally and politely.",
+    "answer": "Subject: Request to Reschedule Meeting\n\nDear [Client Name],\n\nI hope you're doing well. I wanted to kindly request to reschedule our upcoming meeting originally set for [Original Date and Time] due to [Reason]. Would [New Date and Time] work for you?\n\nThank you for your understanding.\n\nBest regards,\n[Your Full Name]"
+  },
+  {
+    "id": 15,
+    "category": "Business",
+    "question": "Thank client after meeting",
+    "prompt": "Write a professional thank-you email to a client after a meeting.",
+    "answer": "Subject: Thank You for Your Time\n\nDear [Client Name],\n\nThank you for meeting with me today. I truly appreciate your valuable time and insights. I look forward to exploring how we can collaborate further on [Project/Service].\n\nWarm regards,\n[Your Full Name]\n[Company Name]"
+  },
+  {
+    "id": 16,
+    "category": "Business",
+    "question": "Send a quote to a client",
+    "prompt": "Write a professional email to send a quotation to a client.",
+    "answer": "Subject: Quotation for [Service/Project]\n\nDear [Client Name],\n\nAs discussed, please find attached the quotation for [Service/Project]. I’ve included all details and timelines for your review.\n\nPlease let me know if you have any questions.\n\nWarm regards,\n[Your Full Name]"
+  },
+  {
+    "id": 17,
+    "category": "Business",
+    "question": "Remind client about pending payment",
+    "prompt": "Write a polite payment reminder email to a client.",
+    "answer": "Subject: Gentle Payment Reminder\n\nDear [Client Name],\n\nI hope you are doing well. This is a gentle reminder that payment for [Invoice Number] dated [Date] is currently pending. We’d appreciate it if you could process it at your earliest convenience.\n\nThank you for your cooperation.\n\nWarm regards,\n[Your Full Name]"
+  },
+  {
+    "id": 18,
+    "category": "Client",
+    "question": "Welcome new client",
+    "prompt": "Write a warm and professional welcome email to a new client.",
+    "answer": "Subject: Welcome to [Company Name]!\n\nDear [Client Name],\n\nWe’re thrilled to welcome you to [Company Name]. Our team looks forward to supporting your goals and building a long-term partnership.\n\nIf you have any questions, please feel free to reach out.\n\nBest,\n[Your Full Name]"
+  },
+  {
+    "id": 19,
+    "category": "Client",
+    "question": "Thank client for choosing services",
+    "prompt": "Write a thank-you email to a client after they choose your services.",
+    "answer": "Subject: Thank You for Choosing Us\n\nDear [Client Name],\n\nThank you for trusting [Company Name] with your [Project/Service]. We’re excited to work with you and deliver great results.\n\nWarm regards,\n[Your Full Name]"
+  },
+  {
+    "id": 20,
+    "category": "Client",
+    "question": "Send project completion email",
+    "prompt": "Write an email to notify the client that the project is completed.",
+    "answer": "Subject: Project Completion Update\n\nDear [Client Name],\n\nI’m pleased to inform you that [Project Name] has been successfully completed. We truly appreciate your trust and collaboration throughout the process.\n\nPlease find attached the final deliverables.\n\nWarm regards,\n[Your Full Name]"
+  },
+  {
+    "id": 21,
+    "category": "General",
+    "question": "Request a document or file",
+    "prompt": "Write a polite and professional email requesting a document from a colleague.",
+    "answer": "Subject: Request for Document\n\nHi [Colleague Name],\n\nI hope you're doing well. Could you please share the [Document/File Name] with me at your earliest convenience? It would help me proceed with [Task/Project].\n\nThanks a lot!\n\nBest,\n[Your Full Name]"
+  },
+  {
+    "id": 22,
+    "category": "General",
+    "question": "Apologize for a delay in reply",
+    "prompt": "Write a polite apology email for replying late to a previous message.",
+    "answer": "Subject: My Apologies for the Delay\n\nHi [Recipient Name],\n\nI sincerely apologize for the delayed response to your message. I appreciate your patience and understanding.\n\nI’ve reviewed your previous email and here’s my response regarding [Topic].\n\nThank you again for your understanding.\n\nWarm regards,\n[Your Full Name]"
+  },
+  {
+    "id": 23,
+    "category": "General",
+    "question": "Appreciate a colleague",
+    "prompt": "Write a short email to appreciate a colleague for their help.",
+    "answer": "Subject: Thank You!\n\nHi [Colleague Name],\n\nI just wanted to thank you for your help with [Task/Project]. Your support made a big difference.\n\nReally appreciate it!\n\nWarm regards,\n[Your Full Name]"
+  },
+  {
+    "id": 24,
+    "category": "General",
+    "question": "Request feedback",
+    "prompt": "Write a formal email to request feedback on work or performance.",
+    "answer": "Subject: Request for Feedback\n\nDear [Recipient Name],\n\nI hope you're doing well. I’d really appreciate it if you could share your feedback on [Task/Project]. Your input will help me improve and deliver better results.\n\nWarm regards,\n[Your Full Name]"
+  },
+  {
+    "id": 25,
+    "category": "General",
+    "question": "Congratulate a colleague",
+    "prompt": "Write a warm email congratulating a colleague for their achievement.",
+    "answer": "Subject: Congratulations!\n\nHi [Colleague Name],\n\nCongratulations on your recent [Achievement/Promotion]. It’s well deserved and I’m really happy for you!\n\nWishing you continued success.\n\nBest,\n[Your Full Name]"
+  },
+  {
+    "id": 26,
+    "category": "Job",
+    "question": "Follow up on offer letter",
+    "prompt": "Write a polite email to HR following up on the offer letter.",
+    "answer": "Subject: Follow-Up on Offer Letter\n\nDear [HR Name],\n\nI hope this email finds you well. I wanted to kindly follow up regarding the offer letter for the [Job Title] position. Please let me know if there’s any update on this.\n\nWarm regards,\n[Your Full Name]"
+  },
+  {
+    "id": 27,
+    "category": "Job",
+    "question": "Request remote work",
+    "prompt": "Write an email to HR requesting remote work arrangement.",
+    "answer": "Subject: Request for Remote Work Arrangement\n\nDear [HR Name],\n\nI hope you're doing well. I’d like to request the possibility of working remotely for [Reason/Period]. I assure you that my productivity and responsibilities will remain unaffected.\n\nThank you for your consideration.\n\nBest,\n[Your Full Name]"
+  },
+  {
+    "id": 28,
+    "category": "Academic",
+    "question": "Email about group project issue",
+    "prompt": "Write a polite email to professor about issues in a group project.",
+    "answer": "Subject: Concern Regarding Group Project\n\nDear Professor [Last Name],\n\nI hope this email finds you well. I’d like to inform you about some challenges my group is facing in the [Project Name]. We are finding it difficult to [Issue].\n\nYour guidance would be greatly appreciated.\n\nWarm regards,\n[Your Name]"
+  },
+  {
+    "id": 29,
+    "category": "Academic",
+    "question": "Request deadline clarification",
+    "prompt": "Write a polite email to a professor asking for clarification on a deadline.",
+    "answer": "Subject: Clarification on Deadline\n\nDear Professor [Last Name],\n\nI hope you’re doing well. Could you please confirm the deadline for [Assignment/Project Name]? I want to ensure I submit it on time.\n\nThank you for your time.\n\nWarm regards,\n[Your Name]"
+  },
+  {
+    "id": 30,
+    "category": "Academic",
+    "question": "Request syllabus clarification",
+    "prompt": "Write a polite email asking for clarification on a course syllabus.",
+    "answer": "Subject: Clarification on Course Syllabus\n\nDear Professor [Last Name],\n\nI hope you are doing well. I have a small question regarding [Topic] in the syllabus. Could you kindly provide some clarification?\n\nThank you so much.\n\nWarm regards,\n[Your Name]"
+  },
+  {
+    "id": 31,
+    "category": "Client",
+    "question": "Follow up after sending proposal",
+    "prompt": "Write a polite follow-up email after sending a business proposal.",
+    "answer": "Subject: Follow-Up on Proposal\n\nDear [Client Name],\n\nI hope you're doing well. I wanted to follow up on the proposal I sent on [Date]. Please let me know if you need any additional details.\n\nWarm regards,\n[Your Full Name]"
+  },
+  {
+    "id": 32,
+    "category": "Client",
+    "question": "Invite client to event",
+    "prompt": "Write an email inviting a client to a corporate event.",
+    "answer": "Subject: Invitation to [Event Name]\n\nDear [Client Name],\n\nWe’re excited to invite you to [Event Name] on [Date]. It would be a pleasure to have you with us.\n\nPlease find the details attached.\n\nBest regards,\n[Your Full Name]"
+  }
+]
