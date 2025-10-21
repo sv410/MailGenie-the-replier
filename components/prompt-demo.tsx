@@ -134,6 +134,9 @@ export function PromptDemo() {
               "Generate Email"
             )}
           </Button>
+          <a href="/extension" className="btn-secondary" aria-label="Get the browser extension">
+            Add Extension
+          </a>
         </div>
 
         {result && (

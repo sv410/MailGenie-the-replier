@@ -21,6 +21,12 @@ const TONE_STYLES: Record<Tone, { greeting: string; signoff: string; flair: stri
   },
 }
 
+const CORS_HEADERS = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type",
+}
+
 function pickTemplate(prompt: string) {
   const p = prompt.toLowerCase()
   if (p.includes("accept") || p.includes("offer")) return "offer-accept"
@@ -47,7 +53,6 @@ function buildEmail(prompt: string, tone: Tone) {
   const body = [
     `${t.greeting} [Recipient],`,
     "",
-    `I'm reaching out regarding: "${prompt}".`,
     template === "offer-accept"
       ? "I'm pleased to accept the offer and look forward to getting started. Please let me know the next steps and any paperwork to complete."
       : template === "meeting"
@@ -56,7 +61,7 @@ function buildEmail(prompt: string, tone: Tone) {
           ? "I wanted to follow up on my earlier message and see if there are any updates. I'm happy to provide additional information."
           : template === "thank-you"
             ? "Thank you for your time and support. I truly appreciate the opportunity to connect."
-            : "I'm writing to provide an update and keep things moving forward. Please let me know your thoughts.",
+            : "I'm writing to follow up and keep things moving forward. I've prepared the details and next steps based on your needs. Please share any preferences so I can refine accordingly.",
     "",
     t.flair,
     "",
@@ -65,6 +70,10 @@ function buildEmail(prompt: string, tone: Tone) {
   ].join("\n")
 
   return { subject, email: body }
+}
+
+export async function OPTIONS() {
+  return new NextResponse(null, { headers: CORS_HEADERS })
 }
 
 export async function POST(req: NextRequest) {
@@ -76,13 +85,28 @@ export async function POST(req: NextRequest) {
       const answer: string = String(item.answer || "")
       const subjMatch = answer.split("\n").find((l) => l.trim().toLowerCase().startsWith("subject:"))
       const subject = subjMatch ? subjMatch.replace(/^Subject:\s*/i, "").trim() : "Generated Email"
-      return NextResponse.json({ subject, email: answer })
+      return NextResponse.json({ subject, email: answer }, { headers: CORS_HEADERS })
     }
   }
 
   const safePrompt = typeof prompt === "string" && prompt.trim().length > 0 ? prompt.trim() : "Your request"
   const safeTone: Tone = tone === "Friendly" || tone === "Persuasive" ? tone : "Formal"
 
+  const serviceUrl = process.env.PYTHON_SERVICE_URL || "http://127.0.0.1:8001"
+  try {
+    const res = await fetch(`${serviceUrl}/generate`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ prompt: safePrompt, tone: safeTone }),
+    })
+    if (res.ok) {
+      const json = await res.json()
+      if (json && typeof json.subject === "string" && typeof json.email === "string") {
+        return NextResponse.json(json, { headers: CORS_HEADERS })
+      }
+    }
+  } catch {}
+
   const result = buildEmail(safePrompt, safeTone)
-  return NextResponse.json(result)
+  return NextResponse.json(result, { headers: CORS_HEADERS })
 }

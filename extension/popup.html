@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MailGenie</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">MailGenie</div>
+      <a id="openApp" class="link" href="#" role="button">Open App</a>
+    </header>
+
+    <main class="container">
+      <label class="label" for="prompt">Prompt</label>
+      <textarea id="prompt" class="textarea" placeholder="e.g., Write an email to HR accepting offer"></textarea>
+
+      <label class="label" for="tone">Tone</label>
+      <select id="tone" class="select">
+        <option value="Formal">Formal</option>
+        <option value="Friendly">Friendly</option>
+        <option value="Persuasive">Persuasive</option>
+      </select>
+
+      <div class="row">
+        <button id="generate" class="btn primary">Generate</button>
+        <button id="openOptions" class="btn">Settings</button>
+      </div>
+
+      <section id="result" class="result hidden">
+        <div class="pill">Subject</div>
+        <div id="subject" class="subject"></div>
+        <div class="pill">Email</div>
+        <pre id="email" class="email"></pre>
+        <div class="row">
+          <button id="copySubject" class="btn">Copy Subject</button>
+          <button id="copyEmail" class="btn">Copy Email</button>
+        </div>
+      </section>
+
+      <section class="settings hidden" id="settings">
+        <div class="pill">Settings</div>
+        <label class="label" for="apiBase">API Base URL</label>
+        <input id="apiBase" class="input" type="text" placeholder="http://localhost:3000" />
+        <div class="row">
+          <button id="saveSettings" class="btn">Save</button>
+          <button id="closeSettings" class="btn">Close</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

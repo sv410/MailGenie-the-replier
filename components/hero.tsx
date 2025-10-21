@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Puzzle } from "lucide-react"
 
 export function Hero() {
   return (
@@ -29,6 +29,10 @@ export function Hero() {
             </a>
             <a href="#how" className="btn-secondary">
               See How It Works
+            </a>
+            <a href="/extension" className="btn-secondary" aria-label="Get the browser extension">
+              Add Extension
+              <Puzzle className="ml-2 size-4" />
             </a>
           </div>
         </div>

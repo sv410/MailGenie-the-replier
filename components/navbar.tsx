@@ -46,6 +46,9 @@ export function Navbar() {
           <Button asChild variant="default" className="btn-navbar">
             <a href="/try">Try MailGenie for Free</a>
           </Button>
+          <Button asChild variant="secondary" className="btn-navbar">
+            <a href="/extension">Add Extension</a>
+          </Button>
         </div>
         </div>
       </div>

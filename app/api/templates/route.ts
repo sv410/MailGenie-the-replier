@@ -3,6 +3,16 @@ import data from "@/data/prompts.json"
 
 export const dynamic = "force-dynamic"
 
+const CORS_HEADERS = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "GET, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type",
+}
+
+export async function OPTIONS() {
+  return new NextResponse(null, { headers: CORS_HEADERS })
+}
+
 export async function GET() {
   const items = (data as any[]).map((d) => ({
     id: String(d.id),
@@ -12,5 +22,5 @@ export async function GET() {
     answer: String(d.answer || ""),
   }))
   const categories = Array.from(new Set(items.map((i) => i.category))).sort()
-  return NextResponse.json({ categories, items })
+  return NextResponse.json({ categories, items }, { headers: CORS_HEADERS })
 }

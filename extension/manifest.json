@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "MailGenie Extension",
+  "version": "0.1.0",
+  "description": "Generate professional emails from short prompts using MailGenie.",
+  "action": {
+    "default_title": "MailGenie",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["http://localhost:3000/*", "https://*/*"]
+}
